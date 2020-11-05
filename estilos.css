@@ -1,0 +1,332 @@
+
+html {
+	font-size:65,5%;
+}
+
+/*layout con flexbox*/
+#analisis {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.contenedor {
+	background-color: transparent;
+	width: 90%;
+	height: 100%;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.encabezado {
+	background-color: transparent;
+	height: 100px;
+	display: flex;
+	flex-basis: 100%; 
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logo2 img {
+	width: 200px;
+	margin-left: 10px;
+}
+
+.encabezado nav {
+	width: 50%;
+	display: flex;
+}
+
+.encabezado nav a {
+	text-decoration: none ;
+	color: gray;
+	background-color: black;
+	padding: 10px;
+	text-align: center;
+	flex-grow: 1; 
+}
+
+.encabezado nav a:hover {
+background-color: gold;
+}
+
+.main {
+	background-color: transparent;
+	padding: 20px;
+	flex: 1 1 70%;
+}
+
+aside {
+	background-color: transparent;
+	padding: 50px;
+	flex: 1 1 30%;/*por ahi tengas que modificarlo o sacarlo*/
+}
+
+aside div {
+	background-color: transparent;
+	
+	height: 150px;
+	margin: 10px;
+	padding: 50px;
+}
+
+aside div .imagen-analisis  {
+	width: 300px;
+
+}
+
+
+/*layout con Flexbox*/
+
+/*Grids*/
+.contenedorGrids {
+	width: cover;
+	border: solid 20px none;
+	font-size: 20px;
+	height: cover;
+	display: grid;
+	grid-template-rows: repeat(2,2fr);
+	grid-template-columns: repeat(2,2fr);
+	grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}
+
+.contenedorGrids div {
+
+	color: transparent;
+	background-color: transparent;
+	box-shadow: 1px 1px  8px; 
+	text-align: center;
+	padding: 20px;
+	}
+
+ img {
+	width: 600px;
+}
+
+ 
+ 
+
+/*fin de Grids*/
+
+/*Animaciones*/
+
+
+li:hover {
+	background-color: transparent;
+
+}
+
+input:focus {
+	text-decoration: none;
+}
+
+
+
+.imagenGrids {
+	transition: 3s;
+	
+}
+
+.imagenGrids:hover {
+	transform: translate(-300px);
+		
+}
+
+.imagenGrids:active {
+	transform: scale(1.5);
+
+}
+
+.linea {
+	animation-name: tonalidad;
+	animation-duration: 30s;
+	animation-iteration-count: infinite; 
+}
+
+@keyframes tonalidad {
+
+	0% { color:black; }
+	16.66%{ color:gold; }
+	33.32%{ color:yellow;   }
+	49.98% { color:black; }
+	66.64%{ color:gold; }
+	83.32%{ color:yellow;   }
+     100%{color:black;  }
+
+
+	
+}
+
+
+/*Animaciones*/
+
+/*Bootstrap*/
+
+@media  (max-width: 576px)
+
+{
+	body {
+		background-color: black
+	}
+
+	p {
+		color: white;
+	}
+
+	.parrafo {
+		color: gold;
+	}
+}
+
+
+/*Bootstrap*/
+nav {
+	background-color: black;
+	background-image: linear-gradient(to left,#434343,#0000)
+}
+
+.logo {
+	position: relative;
+	left:  20rem;
+	width: 40rem;
+	height:30rem;		
+}
+
+#iframe {
+	width: 20rem;
+	height: 15rem;
+	position: sticky;
+	bottom: 5rem;
+}
+
+ul {
+	list-style: none ;
+	font-size: 0 ;
+}
+
+li  {
+	display: inline-block;
+	width:25%;
+	position: relative;
+	font-size: 20px;
+}
+
+ul ul {
+	position: absolute;
+	display: none;
+}
+
+ul ul li {
+	display: block;
+}
+
+ul li:hover ul {
+	display: block;
+}
+
+
+body {
+	background-color: black;
+	color: white;
+	background-size:cover;
+	background-image: url(ciudad8.jpg); 
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#quienesSomos {
+	background-color: black;
+	color: white;
+	background-size:125rem;
+	background-image: url(ciudad8.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#carteradeInversion {
+	background-color: black;
+	color: white;
+	background-size:125rem;
+	background-image: url(ciudad10.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#analisis {
+	background-color: black;
+	color: white;
+	background-size: cover ;
+	background-image: url(ciudad8.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#contacto {
+	background-color: black;
+	color: white;
+	background-size:125rem;
+	background-image: url(ciudad8.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+a  {
+	text-decoration: none;
+	color: blue;	
+}
+ul {
+	list-style-image: none;
+	list-style-type: none;
+}
+
+
+}
+
+p {
+	color: white;
+	font-family: 'Inconsolata', monospace;
+	text-transform: capitalize;
+}
+
+
+
+.linea {
+
+	color: darkgrey;
+	font-family: 'Dancing Script', cursive;
+	font-size: 5rem;
+}
+
+.segundotitulo {
+	color: gold;
+}
+
+.parrafo {
+
+	color: gold;
+}
+
+div {
+	position: relative;
+	right: 100px;
+	margin: 100px;
+	padding: 10px;
+	border: none;
+}
+
+header,
+nav, 
+ul {
+
+	color: orange;
+}
+
+nav {
+	background-color: black;
+}
+
+footer {
+
+}
+
