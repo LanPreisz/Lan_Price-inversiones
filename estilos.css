@@ -308,11 +308,7 @@ p {
 }
 
 div {
-	position: relative;
-	right: 100px;
-	margin: 100px;
-	padding: 10px;
-	border: none;
+	background-color: black;
 }
 
 header,
